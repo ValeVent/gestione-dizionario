@@ -1,0 +1,10 @@
+<div class="d-flex align-items-start">
+    <input type="text" placeholder="Inserisci la parola" class="m-4 p-2 w-20" [(ngModel)]="parolaInserita">
+    <textarea placeholder="Inserisci il significato" class="m-4 p-2 w-20" [(ngModel)]="parolaSignificato"> </textarea>
+    <button class="btn btn-success m-4 px-3 w-20" (click)="aggiungi(parolaInserita, parolaSignificato)">Aggiungi</button>
+</div>
+
+<hr>
+
+<input type="text" placeholder="Cerca una parola..." class="m-4 p-1 w-25"[(ngModel)]="parolaRicercata" (keyup)="cerca(parolaRicercata)">
+<button class="btn btn-danger m-4 px-3 w-20" (click)="reset()">Reset</button>

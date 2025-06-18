@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Parola } from './types/parola.type';
+import { UtilDizionarioService } from './services/util-dizionario.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'secondo-stop-and-code-gestire-un-dizionario';
+
+  listaDiParole: Parola[] = [];
+
+  constructor(public dizionario: UtilDizionarioService) { }
 }

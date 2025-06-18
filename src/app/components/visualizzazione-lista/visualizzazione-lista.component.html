@@ -1,0 +1,9 @@
+<ul>
+    <li class="list-group-item list-group-item-action p-3"
+      *ngFor="let parola of listaDiParoleFiltrate; let odd = odd; let even = even" 
+      [ngClass]="{ 'bg-white': odd, 'bg-gray': even }">
+      <b>{{ parola.parola }}</b>: {{ parola.significato }}
+    </li>
+  </ul>
+
+  
