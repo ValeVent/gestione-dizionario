@@ -8,7 +8,7 @@ import { UtilDizionarioService } from './services/util-dizionario.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'secondo-stop-and-code-gestire-un-dizionario';
+  title = 'gestione-dizionario';
 
   listaDiParole: Parola[] = [];
 
